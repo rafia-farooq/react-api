@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import Covid from "./CovidApi.js";
+import Countries from "./FetchApi.js";
+import Weather from "./WeatherApi";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <h2>Today's Weather</h2>
+    <Weather></Weather>
+
+    <h2>Covid Update</h2>
+    <Covid></Covid>
+    
+    <h2>Countries Information</h2>
+    <Countries></Countries>
+
+    </>
   );
 }
 
